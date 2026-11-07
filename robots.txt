@@ -1,0 +1,7 @@
+# robots.txt for embargoed-doi-innovation-protocol
+
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://helixoriginator.github.io/embargoed-doi-innovation-protocol/sitemap.xml
