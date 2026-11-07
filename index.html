@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dark DOI Registry | Cryptographic Priority Locking for Grassroots IP</title>
+  <meta name="description" content="An open architectural specification for a Dark/Embargoed DOI Registry providing cryptographic priority locking and NDA adjudication for grassroots creators." />
+  <style>
+    :root {
+      --bg-color: #0b0f19;
+      --card-bg: #111827;
+      --border-color: #1f2937;
+      --accent-color: #38bdf8;
+      --accent-hover: #0284c7;
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+      --code-bg: #030712;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: rgba(56, 189, 248, 0.1);
+      color: var(--accent-color);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      color: #ffffff;
+      margin-bottom: 0.75rem;
+    }
+
+    .subtitle {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+    }
+
+    .card h3 {
+      font-size: 1.1rem;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    section {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 0.75rem;
+      padding: 2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: #ffffff;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.5rem;
+    }
+
+    .pipeline-step {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .step-num {
+      background-color: var(--accent-color);
+      color: #000;
+      font-weight: 700;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      border-top: 1px solid var(--border-color);
+      padding-top: 2rem;
+    }
+
+    .author-name {
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 1.05rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .author-credentials {
+      color: var(--accent-color);
+      font-size: 0.875rem;
+      margin-bottom: 0.75rem;
+    }
+
+    footer a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="badge">Helix Originator Specification</span>
+      <h1>Dark / Embargoed DOI Registry</h1>
+      <p class="subtitle">A Cryptographic Priority-Locking Framework for Unaffiliated & Grassroots Innovators</p>
+    </header>
+
+    <div class="grid">
+      <div class="card">
+        <h3>🔒 Sealed Priority</h3>
+        <p>Uses SHA-256 cryptographic hashing to lock invention timestamps without public metadata exposure.</p>
+      </div>
+      <div class="card">
+        <h3>🛡️ Legal Safety</h3>
+        <p>Preserves strict "First-to-File" patent novelty by preventing premature public prior-art disclosure.</p>
+      </div>
+      <div class="card">
+        <h3>🌐 Grassroots Funding</h3>
+        <p>Connects independent researchers directly to NDA-bound adjudication panels and patent-filing grants.</p>
+      </div>
+    </div>
+
+    <section>
+      <h2>Architecture & Workflow</h2>
+      <div class="pipeline-step">
+        <div class="step-num">1</div>
+        <div>
+          <strong>Cryptographic Intake:</strong> Technical payloads are hashed locally. The immutable fingerprint (SHA-256) is committed to the registry database.
+        </div>
+      </div>
+      <div class="pipeline-step">
+        <div class="step-num">2</div>
+        <div>
+          <strong>Embargoed DOI Issuance:</strong> A dark DOI is allocated. Metadata remains completely sealed while establishing legal time-priority.
+        </div>
+      </div>
+      <div class="pipeline-step">
+        <div class="step-num">3</div>
+        <div>
+          <strong>Adjudication & IP Grant:</strong> Anonymized, NDA-bound reviewers evaluate merit to provide filing micro-grants prior to national patent lodge.
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Conceptualized & Developed under the <strong>Helix Originator Framework</strong></p>
+      <div class="author-name">Kallol Chakrabarti</div>
+      <div class="author-credentials">
+        Independent Researcher | Global Scholarly Peer Reviewer<br />
+        India Book of Records Holder (2025) &bull; Asia Book of Records Grand Master (2025)
+      </div>
+      <p>Open for global research collaboration & strategic institutional partnership.</p>
+    </footer>
+  </div>
+</body>
+</html>
